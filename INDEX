@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đang chuyển đến ứng dụng…</title>
+</head>
+<body>
+  <p>Đang chuyển đến ứng dụng…</p>
+  <p><a id="open">Bấm vào đây nếu chưa tự chuyển</a></p>
+
+  <script>
+    // Mỗi lần đổi link, chỉ sửa dòng này:
+    const destination = "https://script.google.com/a/macros/dotquy.vn/s/AKfycbzb0hx6WygvFzy4RLAgKG_Zsi7upgS3UFTBdHkJcnWCNRmewbRJbjRDjVhF22sYhJz4dw/exec";
+
+    document.getElementById("open").href = destination;
+    window.location.replace(destination);
+  </script>
+</body>
+</html>
